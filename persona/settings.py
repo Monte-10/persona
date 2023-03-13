@@ -89,9 +89,11 @@ WSGI_APPLICATION = 'persona.wsgi.application'
 import dj_database_url
 NEON_URL = 'postgres://Monte-10@ep-floral-flower-150155.eu-central-1.aws.neon.tech/persona'
 
+db_from_env = dj_database_url.config(default=NEON_URL, conn_max_age=500)
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'), conn_max_age=600),
 }
+DATABASES['default'].update(db_from_env)
 
 
 
