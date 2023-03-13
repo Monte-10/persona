@@ -150,7 +150,7 @@ CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
     'https://persona-pqxk.onrender.com',
-    'https://tutorial-vue-wyzh.onrender.com/',
+    'https://tutorial-vue-wyzh.onrender.com',
 ]
 
 """
