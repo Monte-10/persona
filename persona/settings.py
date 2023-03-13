@@ -10,6 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+"""
+URL DJANGO: https://persona-pqxk.onrender.com
+URL VUE: https://tutorial-vue-wyzh.onrender.com
+URL DATABASE: https://ep-floral-flower-150155.eu-central-1.aws.neon.tech
+"""
 from pathlib import Path
 
 from dotenv import load_dotenv
