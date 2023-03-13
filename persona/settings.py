@@ -92,6 +92,9 @@ import dj_database_url
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'), conn_max_age=600),
 }
+NEON_URL = 'postgres://Monte-10:6MRHePxQ4Tvb@ep-floral-flower-150155.eu-central-1.aws.neon.tech/persona'
+db_from_env = dj_database_url.config(default=NEON_URL, conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 
 
 
